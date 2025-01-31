@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import Together from "together-ai";
 import { environment } from '../environments/environments';
-require('dotenv').config();
 @Injectable({
   providedIn: 'root'
 })
