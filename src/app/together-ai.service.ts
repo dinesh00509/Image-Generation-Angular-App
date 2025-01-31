@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import Together from "together-ai";
 import { environment } from '../environments/environments';
+require('dotenv').config();
 @Injectable({
   providedIn: 'root'
 })
@@ -8,7 +9,7 @@ import { environment } from '../environments/environments';
 export class TogetherAiService {
   private together = new Together(
     {
-    apiKey : environment.togetherAIKey
+    apiKey : environment.togetherAIKey,
     }
   );
 
