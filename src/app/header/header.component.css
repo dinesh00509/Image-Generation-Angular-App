@@ -1,0 +1,31 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 35px;
+
+    background-color:rgb(123, 102, 245);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+  }
+/*   
+  nav button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #1e88e5;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, transform 0.2s;
+  } */
+  
+  /* nav button:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+  } */
