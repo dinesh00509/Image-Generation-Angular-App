@@ -37,9 +37,6 @@ export class TogetherAiService {
         return undefined;
       }
 
-      console.log(res, '---------------------res');
-      
-
     } catch (error) {
       console.error(error);
 

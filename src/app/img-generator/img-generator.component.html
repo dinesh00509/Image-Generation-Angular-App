@@ -1,22 +1,15 @@
 <div class="image-generator-container">
     <h1>Image Generator</h1>
     <div class="input-wrapper">
-        <input 
-            type="text" 
-            [(ngModel)]="promptInput" 
-            placeholder="Describe your image here..." 
-            (keydown.enter)="generateImage()" 
-        />
-        <button 
-            class="generate-btn" 
-            (click)="generateImage()" 
-            [disabled]="isLoading"
-            
-        >
-            {{ isLoading ? 'Generating...' : 'Generate' }}
-        </button>
+      <input 
+        type="text" 
+        [(ngModel)]="promptInput" 
+        placeholder="Describe your image here..." 
+        (input)="onInputChange(promptInput)" 
+      />
     </div>
     <div class="image-preview">
-        <img *ngIf="imageUrl" [src]="imageUrl" alt="Generated Image" />
+      <img [src]="imageUrl " alt="" />
+      <div *ngIf="isLoading && !imageUrl" class="loading-spinner">Generating...</div>
     </div>
-</div>
+  </div>
